@@ -42,7 +42,7 @@ int main(int argc, char const *argv[])
     scanf("%d", &temp->bno);
     temp->next = NULL;
 
-    for (j = 0; j < ft[i].nob; j++)
+    for (j = 1; j < ft[i].nob; j++)
     {
       temp->next = (struct block *)malloc(sizeof(struct block));
       temp = temp->next;
