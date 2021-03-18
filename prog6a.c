@@ -54,6 +54,7 @@ int main(int argc, char const *argv[])
       printf("%d, ", ft[i].sb + j);
     printf("\n");
   }
+  printf("\n");
 
   return 0;
 }
