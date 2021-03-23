@@ -1,3 +1,5 @@
+// Producer-Consumer problem using semaphores
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -14,7 +16,7 @@ int main()
   while (1)
   {
     printf("\n");
-    printf("\n1.Producer\n2.Consumer\n3.Exit");
+    printf("\n1.Produce\n2.Consume\n3.Exit");
     printf("\nEnter your choice:");
     scanf("%d", &ch);
     switch (ch)
