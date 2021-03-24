@@ -6,7 +6,7 @@ struct
   char dname[10], fname[10][10];
   int fcnt;
 } dir[10];
-void main()
+int main(int argc, char const *argv[])
 {
   int i, ch, dcnt, k;
   char f[30], d[30];
@@ -108,4 +108,5 @@ void main()
       exit(0);
     }
   }
+  return 0;
 }

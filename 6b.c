@@ -13,29 +13,24 @@ int main(int argc, char const *argv[])
   char s[20];
 
   printf("\nEnter no. of files: ");
-  fflush(0);
   scanf("%d", &n);
 
   for (i = 0; i < n; i++)
   {
     printf("\nEnter filename %d: ", i + 1);
-    fflush(0);
     scanf("%s", ft[i].name);
 
     printf("\nEnter no. of blocks in file %d: ", i + 1);
-    fflush(0);
     scanf("%d", &ft[i].nob);
 
     printf("\nEnter the blocks of the file: ");
     for (j = 0; j < ft[i].nob; j++)
     {
-      fflush(0);
       scanf("%d", &ft[i].blocks[j]);
     }
   }
 
   printf("\nEnter the file name to be searched: ");
-  fflush(0);
   scanf("%s", s);
 
   for (i = 0; i < n; i++)

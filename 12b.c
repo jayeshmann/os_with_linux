@@ -5,7 +5,7 @@
 
 int mutex = 1, full = 0, empty = 3, x = 0;
 
-int main()
+int main(int argc, char const *argv[])
 {
   int ch;
   void producer();
@@ -38,7 +38,6 @@ int main()
       break;
     }
   }
-
   return 0;
 }
 

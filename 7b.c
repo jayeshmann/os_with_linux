@@ -8,24 +8,20 @@ int main(int argc, char const *argv[])
   int i, p = 0;
 
   printf("Enter the total memory available (in Bytes): ");
-  fflush(0);
   scanf("%d", &ms);
 
   printf("Enter the block size (in Bytes): ");
-  fflush(0);
   scanf("%d", &bs);
 
   nob = ms / bs;
   ef = ms - nob * bs;
 
   printf("\nEnter the no. of processes: ");
-  fflush(0);
   scanf("%d", &n);
 
   for (i = 0; i < n; i++)
   {
     printf("Enter memory required for process %d (in Bytes): ", i + 1);
-    fflush(0);
     scanf("%d", &mp[i]);
   }
 

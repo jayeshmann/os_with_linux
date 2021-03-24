@@ -16,7 +16,6 @@ int main(int argc, char const *argv[])
   dir.fcnt = 0;
 
   printf("\nEnter name of directory: ");
-  fflush(0);
   scanf("%s", dir.dname);
 
   while (1)
@@ -48,7 +47,7 @@ int main(int argc, char const *argv[])
         {
           printf("\n");
           printf("File %s is deleted.", f);
-          strcpy(dir.fname[i], dir.fname[dir.fcnt - 1]); //TODO
+          strcpy(dir.fname[i], dir.fname[dir.fcnt - 1]);
           break;
         }
       }
