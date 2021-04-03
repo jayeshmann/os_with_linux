@@ -1,18 +1,22 @@
+//Page Replacement FIFO
 #include <stdio.h>
 int main(int argc, char const *argv[])
 {
   int i, j, n, a[50], frame[10], no, k, avail, count = 0;
-  printf("\n ENTER THE NUMBER OF PAGES:\n");
+  printf("Enter the no. of pages: ");
   scanf("%d", &n);
-  printf("\n ENTER THE PAGE NUMBER :\n");
+  printf("\n");
+  printf("Enter the page no.: ");
   for (i = 1; i <= n; i++)
     scanf("%d", &a[i]);
-  printf("\n ENTER THE NUMBER OF FRAMES :");
+  printf("\n");
+  printf("Enter the number of frames: ");
   scanf("%d", &no);
+  printf("\n");
   for (i = 0; i < no; i++)
     frame[i] = -1;
   j = 0;
-  printf("\tref string\t page frames\n");
+  printf("Ref string\tpage frames\n");
   for (i = 1; i <= n; i++)
   {
     printf("%d\t\t", a[i]);
@@ -30,7 +34,7 @@ int main(int argc, char const *argv[])
     }
     printf("\n");
   }
-  printf("Page Fault Is %d", count);
+  printf("Page Fault = %d", count);
   printf("\n");
   return 0;
 }
